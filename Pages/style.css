@@ -65,29 +65,98 @@ font-family: Arial, Helvetica, sans-serif;
 
     .container {
       max-width: 600px;
-      margin: auto;
+      margin: 30px auto;
       background: #fff;
       padding: 20px;
       border-radius: 10px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     }
-    h1, h3 { text-align: center; color: #333; }
-    label { display: block; margin-top: 10px; font-weight: bold; }
+
+    .logo {
+      display: block;
+      margin: 0 auto 15px;
+      max-width: 120px;
+    }
+
+    h1, h2, h3 {
+      text-align: center;
+      margin-bottom: 15px;
+    }
+
+    label {
+      display: block;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
     input, textarea, select, button {
-      width: 100%; padding: 8px; margin-top: 5px;
-      border-radius: 5px; border: 1px solid #ccc;
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      font-size: 14px;
     }
-    button { background: #4CAF50; color: white; cursor: pointer; margin-top: 15px; }
-    button:hover { background: #45a049; }
-    ul.order-list { margin-top: 15px; padding-left: 20px; list-style-type: none; }
-    ul.order-list li {
-      background: #f1f1f1; margin: 5px 0; padding: 10px; border-radius: 5px;
-      display: flex; justify-content: space-between; align-items: center;
+
+    button {
+      background: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+      margin-top: 15px;
     }
+
+    button:hover {
+      background: #45a049;
+    }
+
+    .order-list {
+      margin-top: 15px;
+      padding: 0;
+      list-style: none;
+    }
+
+    .order-list li {
+      padding: 8px;
+      margin: 5px 0;
+      background: #f9f9f9;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
     .remove-btn {
-      margin-left: 10px;
-      background: red; color: white; border: none; padding: 3px 6px;
-      cursor: pointer; border-radius: 5px;
+      background: red;
+      color: white;
+      border: none;
+      padding: 5px 10px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 12px;
     }
-    .remove-btn:hover { background: darkred; }
-    .logo { display: block; margin: 0 auto 20px auto; max-width: ä }
+
+    .preview {
+      display: none;
+      margin-top: 20px;
+      padding: 15px;
+      border: 2px solid #4CAF50;
+      border-radius: 10px;
+      background: #f0fff0;
+    }
+
+    .preview button {
+      margin-top: 10px;
+      width: 48%;
+      display: inline-block;
+    }
+
+    .btn-confirm {
+      background: #4CAF50;
+    }
+
+    .btn-edit {
+      background: #f39c12;
+    }
